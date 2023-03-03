@@ -15,7 +15,7 @@ class bhsebseh(commands.Cog):
         self.bot.add_view(TutorialView(self.bot))
         self.bot.add_view(main(self.bot))
 
-    @slash_command(description="Ticket System")
+    @slash_command(description="Ticket System erstellen")
     @commands.has_permissions(administrator=True)
     async def ticket(self, ctx,channel: discord.TextChannel):
 
